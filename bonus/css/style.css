@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #B91350;
+  text-align: center;
+}
+.hidden{
+  opacity: 0;
+  transition: 0.5s;
+}
+.show{
+  opacity: 1;
+  transition: 0.5s;
+}
+h2{
+  padding: 20px;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.row{
+  display: flex;
+  justify-content: center;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.form{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+label{
+  margin: 20px;
+  font-weight: 700;
+  color: #B91350;
+}
+input, select{
+  margin: 10px;
+  height: 25px;
+  line-height: 25px;
+  border: 1px solid #B91350;
+  border-radius: 5px;
+}
+input{
+  padding: 5px;
+  text-align: center;
+}
+input:focus,
+select:focus {
+  color: #fff;
+  background-color: #B91350;
+}
+input:focus::placeholder{
+  color: #fff;
+}
+.btn{
+  margin: 10px;
+  background-color: #D2D2D2;
+  color: #B91350;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: grey;
+  color: #fff;
+}
+
+.ticket{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+}
+.ticket .row{
+  min-height: 300px;
+}
+.ticket h3{
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.dettagli_passeggeri{
+  width: 20%;
+  padding: 20px 10px;
+  background-color: #808080;
+}
+.stampa_biglietto{
+  width: 80%;
+  padding: 20px 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.stampa_biglietto td, #print_nome{
+  line-height: 50px;
+  vertical-align: middle;
+}
+#print_nome{
+  text-transform: uppercase;
+}
