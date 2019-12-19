@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Biglietto Treno</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>calcola il prezzo del tuo biglietto</h2>
+      <div class="form">
+        <div class="row">
+          <div class="col">
+            <label for="nome_passegero">Nome Cognome</label>
+            <input type="text" name="nome_passegero" value="" placeholder="Inserisci il tuo nome" id="nome">
+          </div>
+          <div class="col">
+            <label for="km_da_percorrere">Km da percorrere</label>
+            <input type="number" name="km_da_percorrere" value="" placeholder="Inserisci i km" id="km">
+          </div>
+          <div class="col">
+            <label for="fascia_eta">Fascia d'et&agrave:</label>
+            <select class="" name="fascia_eta" id="sconto">
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="minorenne">Minorenne</option>
+              <option value="over65">Over 65</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn" id="genera">Genera</button>
+          <button class="btn" id="annulla">Annulla</button>
+        </div>
+      </div>
+      <h2 class="hidden">il tuo biglietto</h2>
+      <div class="ticket hidden">
+        <h3>Dettagli Passeggeri</h3>
+        <div class="row">
+          <div class="col dettagli_passeggeri">
+            <h4>Nome Passeggero</h4>
+            <span id="print_nome"></span>
+          </div>
+          <div class="col stampa_biglietto">
+            <table>
+              <thead>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>CodiceCP</th>
+                  <th>Costo Biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="print_offerta"></td>
+                  <td id="print_carrozza"></td>
+                  <td id="print_codicecp"></td>
+                  <td id="print_costo"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
