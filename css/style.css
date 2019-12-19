@@ -12,10 +12,10 @@
   background-color: #B91350;
   text-align: center;
 }
-/* .hidden{
+.hidden{
   opacity: 0;
   transition: 0.5s;
-} */
+}
 .show{
   opacity: 1;
   transition: 0.5s;
@@ -107,5 +107,11 @@ input:focus::placeholder{
   padding: 20px 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-
+}
+.stampa_biglietto td, #print_nome{
+  line-height: 50px;
+  vertical-align: middle;
+}
+#print_nome{
+  text-transform: uppercase;
 }
