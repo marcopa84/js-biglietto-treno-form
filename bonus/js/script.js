@@ -23,16 +23,16 @@ genera.addEventListener('click',
       tariffaApplicata = ('Sconto Young');
       // risparmio
       var risparmio = costoBiglietto / 100 * 20;
-      document.getElementById('print_risparmio').innerHTML += risparmio.toFixed(2);
-      document.getElementById("print_risparmio").classList.add("show");
+      document.getElementById('print_risparmio').innerHTML = risparmio.toFixed(2);
+      document.getElementById("print_risparmio_div").classList.add("show");
     }
     else if (sconto == 'over65'){
       costoBiglietto -= (costoBiglietto / 100 * 40);
       tariffaApplicata = ('Sconto Silver');
       // risparmio
       var risparmio = costoBiglietto / 100 * 20;
-      document.getElementById('print_risparmio').innerHTML += risparmio.toFixed(2);
-      document.getElementById("print_risparmio").classList.add("show");
+      document.getElementById('print_risparmio').innerHTML = risparmio.toFixed(2);
+      document.getElementById("print_risparmio_div").classList.add("show");
     }
 
     // Stampo tariffa tariffaApplicata
@@ -65,6 +65,6 @@ annulla.addEventListener('click',
     document.getElementById('print_risparmio').innerHTML = '';
     document.getElementById("biglietto").classList.remove("show");
     document.getElementById("biglietto_titolo").classList.remove("show");
-    document.getElementById("print_risparmio").classList.remove("show");
+    document.getElementById("print_risparmio_div").classList.remove("show");
   }
 );
