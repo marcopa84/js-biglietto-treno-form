@@ -1,7 +1,6 @@
 var genera = document.getElementById('genera');
 genera.addEventListener('click',
   function() {
-
     // definisco variabili generiche
     var nome = document.getElementById('nome').value;
     var km = parseInt(document.getElementById('km').value);
@@ -41,10 +40,11 @@ genera.addEventListener('click',
 
     //stampo costo Biglietto
     document.getElementById('print_costo').innerHTML= costoBiglietto.toFixed(2);
-    
+
     // gestisco la comparsa del biglietto
     var classBiglietto =
     document.getElementById("biglietto").classList.add("show");
+    document.getElementById("biglietto_titolo").classList.add("show");
   }
 );
 
@@ -55,5 +55,6 @@ annulla.addEventListener('click',
     document.getElementById('km').value='';
     document.getElementById('sconto').value='maggiorenne';
     document.getElementById("biglietto").classList.remove("show");
+    document.getElementById("biglietto_titolo").classList.remove("show");
   }
 );
