@@ -115,3 +115,20 @@ input:focus::placeholder{
 #print_nome{
   text-transform: uppercase;
 }
+#print_risparmio_div{
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  background-color: #B91350;
+  color: #fff;
+  border-radius: 50%;
+  padding: 35px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+#print_risparmio{
+  color: #fff;
+  text-align: center;
+
+}
